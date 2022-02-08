@@ -40,6 +40,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 75px;
 
     .links{
         span{

@@ -3,16 +3,19 @@
     <header-box 
       :headerLinks="headerLinks"
     />
+    <jumbotron-box />
   </div>
 </template>
 
 <script>
 import HeaderBox from './components/HeaderBox.vue'
+import JumbotronBox from './components/JumbotronBox.vue'
 
 export default {
   name: 'App',
   components: {
-    HeaderBox
+    HeaderBox,
+    JumbotronBox
   },
   data() {
     return {
@@ -31,12 +34,12 @@ export default {
 </script>
 
 <style lang="scss">
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
