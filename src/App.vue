@@ -1,17 +1,33 @@
 <template>
   <div id="app">
-
+    <header-box 
+      :headerLinks="headerLinks"
+      :logo="headerLogo"
+    />
   </div>
 </template>
 
 <script>
-
+import HeaderBox from './components/HeaderBox.vue'
 
 export default {
   name: 'App',
   components: {
-
-  }
+    HeaderBox
+  },
+  data() {
+    return {
+      headerLinks: [
+        'Home',
+        'Pages',
+        'Courses',
+        'Features',
+        'Blog',
+        'Shop',
+      ],
+      headerLogo: './public/images/dark-logo.png'
+    }
+  },
 }
 </script>
 
