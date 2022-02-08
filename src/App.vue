@@ -2,7 +2,6 @@
   <div id="app">
     <header-box 
       :headerLinks="headerLinks"
-      :logo="headerLogo"
     />
   </div>
 </template>
@@ -25,7 +24,7 @@ export default {
         'Blog',
         'Shop',
       ],
-      headerLogo: './public/images/dark-logo.png'
+      // headerLogo: '../assets/images/dark-logo.png',
     }
   },
 }

@@ -1,18 +1,72 @@
 <template>
-    <div>
-        
+    <div class="container">
+        <div class="links">
+            <span v-for="(link, i) in headerLinks" :key="i">
+                {{link}}
+                <font-awesome-icon class="arrow" icon="chevron-down" @click="searchInputShow" />
+            </span>
+        </div>
+        <img src="../assets/images/dark-logo.png" alt="">
+        <div class="inputs">
+            <font-awesome-icon class="icon" icon="shopping-cart" @click="searchInputShow" />
+            <font-awesome-icon class="icon" icon="user-circle" @click="searchInputShow" />
+            <input type="text" placeholder="Search...">
+        </div>
     </div>
 </template>
 
 <script>
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faSearch, faShoppingCart, faUserCircle } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+library.add(faSearch);
+library.add(faChevronDown);
+library.add(faShoppingCart);
+library.add(faUserCircle);
+
 export default {
+    components:{
+        FontAwesomeIcon,
+    },
     props:{
         headerLinks: Array,
-        logo: String,
     }
 }
 </script>
 
 <style lang="scss" scoped>
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+    .links{
+        span{
+            margin-right: 30px; 
+            cursor: pointer;
+        }
+        .arrow{
+            font-size: 12px;
+        }
+    }
+
+    img{
+        height: 25px;
+    }
+
+    .inputs{
+        
+        .icon{
+            margin-right: 25px;
+        }
+
+        input{
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            background-color: #e2e2e0;
+        }
+    }
+}
 </style>
