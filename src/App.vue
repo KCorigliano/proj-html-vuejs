@@ -5,6 +5,10 @@
     />
     <jumbotron-box />
     <main-container />
+    <footer-box 
+      :exploreLinks="exploreLinks"
+      :informationLinks="informationLinks"
+    />
   </div>
 </template>
 
@@ -12,13 +16,15 @@
 import HeaderBox from './components/HeaderBox.vue'
 import JumbotronBox from './components/JumbotronBox.vue'
 import MainContainer from './components/MainContainer.vue'
+import FooterBox from './components/FooterBox.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderBox,
     JumbotronBox,
-    MainContainer
+    MainContainer,
+    FooterBox
   },
   data() {
     return {
@@ -31,6 +37,20 @@ export default {
         'Shop',
       ],
       // headerLogo: '../assets/images/dark-logo.png',
+      exploreLinks:[
+        'Start here',
+        'Blog',
+        'About us',
+        'Success story',
+        'Courses',
+        'Contact us',
+      ],
+      informationLinks:[
+        'Membership',
+        'Purchase guide',
+        'Privacy policy',
+        'Terms of service',
+      ]
     }
   },
 }
