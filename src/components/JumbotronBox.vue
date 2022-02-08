@@ -18,6 +18,7 @@ export default {
 <style lang="scss" scoped>
 .container{
     position: relative;
+    width: 100%;
     .text{
         position: absolute;
         color: white;

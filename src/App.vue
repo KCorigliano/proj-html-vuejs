@@ -4,18 +4,21 @@
       :headerLinks="headerLinks"
     />
     <jumbotron-box />
+    <main-container />
   </div>
 </template>
 
 <script>
 import HeaderBox from './components/HeaderBox.vue'
 import JumbotronBox from './components/JumbotronBox.vue'
+import MainContainer from './components/MainContainer.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderBox,
-    JumbotronBox
+    JumbotronBox,
+    MainContainer
   },
   data() {
     return {
