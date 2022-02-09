@@ -12,7 +12,7 @@
             <h1>4%</h1>
             <p>Satisfaction rate</p>
         </div>
-        <div class="bg-absolute-3"></div>
+        <div class="bg-absolute"></div>
     </div>
 </template>
 
@@ -35,7 +35,7 @@ export default {
         color: $montainMeadow;
     }
 
-    .bg-absolute-3{
+    .bg-absolute{
         position: absolute;
         height: 40px;
         width: 40px;
