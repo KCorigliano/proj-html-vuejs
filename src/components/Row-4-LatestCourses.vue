@@ -1,53 +1,53 @@
 <template>
-<div class="container">
-    <h5>JOIN MAXCOACH AT BEST</h5>
-    <h1>Latest Online <span>Courses</span></h1>
-    <div class="row">
-        <div class="courses-container">
-            <img src="../assets/images/course-02-480x298.jpg" alt="">
-            <div class="courses-text">
-                <h2>$40.<span>00</span></h2>
-                <p>Learning to Write as a Professional Author</p>
-                <div>
-                    <span><font-awesome-icon class="icon" icon="file-alt" />20 Lessons</span>
-                    <span><font-awesome-icon class="icon" icon="user" />50 Students</span>
+    <div class="container">
+        <h5>JOIN MAXCOACH AT BEST</h5>
+        <h1>Latest Online <span>Courses</span></h1>
+        <div class="row">
+            <div class="courses-container">
+                <img src="../assets/images/course-02-480x298.jpg" alt="">
+                <div class="courses-text">
+                    <h2>$40.<span>00</span></h2>
+                    <p>Learning to Write as a Professional Author</p>
+                    <div>
+                        <span><font-awesome-icon class="icon" icon="file-alt" />20 Lessons</span>
+                        <span><font-awesome-icon class="icon" icon="user" />50 Students</span>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-container">
+                <img src="../assets/images/stock-full-hd-03-480x298.jpg" alt="">
+                <div class="courses-text">
+                    <h2>$0.<span>00</span></h2>
+                    <p>Curstomer-centric info-Tech Strategies</p>
+                    <div>
+                        <span><font-awesome-icon class="icon" icon="file-alt" />24 Lessons</span>
+                        <span><font-awesome-icon class="icon" icon="user" />769 Students</span>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-container">
+                <img src="../assets/images/stock-full-hd-04-480x298.jpg" alt="">
+                <div class="courses-text">
+                    <h2>$19.<span>00</span></h2>
+                    <p>Open Programming Courses fro Everyone: Python</p>
+                    <div>
+                        <span><font-awesome-icon class="icon" icon="file-alt" />17 Lessons</span>
+                        <span><font-awesome-icon class="icon" icon="user" />62 Students</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="courses-container">
-            <img src="../assets/images/stock-full-hd-03-480x298.jpg" alt="">
-            <div class="courses-text">
-                <h2>$0.<span>00</span></h2>
-                <p>Curstomer-centric info-Tech Strategies</p>
-                <div>
-                    <span><font-awesome-icon class="icon" icon="file-alt" />24 Lessons</span>
-                    <span><font-awesome-icon class="icon" icon="user" />769 Students</span>
-                </div>
-            </div>
+        <div class="radio-row">
+            <div class="radio active"></div>
+            <div class="radio"></div>
+            <div class="radio"></div>
+            <div class="radio"></div>
+            <div class="radio"></div>
         </div>
-        <div class="courses-container">
-            <img src="../assets/images/stock-full-hd-04-480x298.jpg" alt="">
-            <div class="courses-text">
-                <h2>$19.<span>00</span></h2>
-                <p>Open Programming Courses fro Everyone: Python</p>
-                <div>
-                    <span><font-awesome-icon class="icon" icon="file-alt" />17 Lessons</span>
-                    <span><font-awesome-icon class="icon" icon="user" />62 Students</span>
-                </div>
-            </div>
+        <div class="paragraph">
+            <p>Control your personal preference settings to get notified about appropriate courses. <span>View all courses →</span></p>
         </div>
     </div>
-    <div class="radio-row">
-        <div class="radio active"></div>
-        <div class="radio"></div>
-        <div class="radio"></div>
-        <div class="radio"></div>
-        <div class="radio"></div>
-    </div>
-    <div class="paragraph">
-        <p>Control your personal preference settings to get notified about appropriate courses. <span>View all courses →</span></p>
-    </div>
-</div>
 </template>
 
 <script>
@@ -67,7 +67,9 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
+@import '@/style/mainStyle.scss';
 .container{
+    padding-top: 50px;
 
     h5{
         text-align: center;
@@ -112,7 +114,7 @@ export default {
                 }
 
                 &:hover{
-                    box-shadow: 0 0 10px grey;
+                    box-shadow: 0 0 10px $delta;
                     cursor: pointer;
                     transition: all 0.5s;
                 }
@@ -138,11 +140,13 @@ export default {
     .radio-row{
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
     
         .radio{
             width: 10px;
             height: 10px;
-            color: grey;
+            background-color: $delta;
             border-radius: 50%;
             margin-right: 15px;
         }
@@ -150,7 +154,7 @@ export default {
         .active{
             width: 15px;
             height: 15px;
-            color: black;
+            background-color: black;
         }
     }
     

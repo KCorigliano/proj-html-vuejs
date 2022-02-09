@@ -1,5 +1,6 @@
 <template>
-   <div class="row">
+<div class="container">
+    <div class="row">
         <div class="img-box">
             <div class="bg-absolute-1"></div>
             <div class="bg-absolute-2">
@@ -22,6 +23,7 @@
         </div>
         <div class="bg-absolute"></div>
     </div>
+</div>
 </template>
 
 <script>
@@ -32,6 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
+@import '@/style/mainStyle.scss';
 .row{
     display: flex;
     justify-content: space-between;
@@ -60,7 +63,7 @@ export default {
             z-index: -1;
 
             img{
-                filter: invert(95%);
+                filter: invert(80%);
             }
         }
 
@@ -121,7 +124,7 @@ export default {
         top: -25px;
         right: 395px;
         border: 5px solid $drifwood;
-        border-top-color: white;
+        border-top-color: $quillGray;
         border-radius: 50%;
     }
 }

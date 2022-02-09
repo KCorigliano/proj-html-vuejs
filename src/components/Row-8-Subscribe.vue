@@ -1,4 +1,5 @@
 <template>
+<div class="container">
     <div class="sub-container">
         <h1>Subscribe <span>Newsletters</span></h1>
         <p>
@@ -13,6 +14,7 @@
         <img class="bg-absolute-2" src="../assets/images/maxcoach-shape-02.png" alt="">
         <img class="bg-absolute-3" src="../assets/images/maxcoach-shape-09.png" alt="">
     </div>
+</div>
 </template>
 
 <script>
@@ -30,6 +32,7 @@ export default {
     width: 500px;
     margin: 0 auto;
     position: relative;
+    padding: 100px 0;
 
     h1{
         margin-bottom: 15px;
@@ -51,13 +54,13 @@ export default {
 
     .bg-absolute-2{
         position: absolute;
-        top: 60px;
+        top: 180px;
         right: -300px;
     }
 
     .bg-absolute-3{
         position: absolute;
-        top: -50px;
+        top: 50px;
         right: -310px;
     }
 }

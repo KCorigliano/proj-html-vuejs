@@ -1,4 +1,5 @@
 <template>
+<div class="container">
     <div class="row">
         <div class="text">
             <h4>TESTIMONIALS</h4>
@@ -40,6 +41,7 @@
             </div>
         </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -50,98 +52,102 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
-.row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 150px;
-
-    .text{
-        width: 35%;
-
-        h4{
-            color: $stormDust;
-            margin-bottom: 15px;
-            font-weight: 400;
-        }
-
-        h2{
-            font-size: 50px;
-            span{
-                color:$montainMeadow;
-                font-weight: 200;
+@import '@/style/mainStyle.scss';
+.container{
+    padding-top: 150px;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+    
+        .text{
+            width: 35%;
+    
+            h4{
+                color: $stormDust;
+                margin-bottom: 15px;
+                font-weight: 400;
+            }
+    
+            h2{
+                font-size: 50px;
+                span{
+                    color:$montainMeadow;
+                    font-weight: 200;
+                }
+            }
+    
+            p{
+                color: $stormDust;
+                line-height: 25px;
+                margin-top: 15px;
+            }
+    
+            p:last-child{
+                margin-top: 30px;
+                color: black;
+                font-weight: bold;
+                text-decoration: underline;
             }
         }
-
-        p{
-            color: $stormDust;
-            line-height: 25px;
-            margin-top: 15px;
-        }
-
-        p:last-child{
-            margin-top: 30px;
-            color: black;
-            font-weight: bold;
-            text-decoration: underline;
-        }
-    }
-
-    .img-box{
-        width: 60%;
-        position: relative;
-
-        h4{
-            margin: 5px 0;
-            line-height: 30px;
-        }
-
-        p{
-            line-height: 30px;
-        }
-
-        .text-image{
-            box-shadow: 0 0 50px $delta;
-            border-radius: 5px;
-            padding: 25px;
-        }
-
-        .avatar-row{
-            display: flex;
-            margin-top: 50px;
-            align-items: center;
-
-            .avatar{
-                width: 50px;
-                border-radius: 50%;
-                margin-right: 15px;
+    
+        .img-box{
+            width: 60%;
+            position: relative;
+    
+            h4{
+                margin: 5px 0;
+                line-height: 30px;
             }
-
-            span{
-                font-size: 12px;
-                color: $delta;
+    
+            p{
+                line-height: 30px;
+            }
+    
+            .text-image{
+                box-shadow: 0 0 50px $delta;
+                border-radius: 5px;
+                padding: 25px;
+            }
+    
+            .avatar-row{
+                display: flex;
+                margin-top: 50px;
+                align-items: center;
+    
+                .avatar{
+                    width: 50px;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                }
+    
+                span{
+                    font-size: 12px;
+                    color: $delta;
+                }
+            }
+    
+        }
+    
+        .background{
+            width: 500px;
+            margin: 0 auto;
+            filter: opacity(40%);
+    
+            .avatar-row{
+                margin-top: 250px;
             }
         }
-
-    }
-
-    .background{
-        width: 500px;
-        margin: 0 auto;
-        filter: opacity(40%);
-
-        .avatar-row{
-            margin-top: 250px;
+    
+        .absolute{
+            position: absolute;
+            background-color: white;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
         }
-    }
-
-    .absolute{
-        position: absolute;
-        background-color: white;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 600px;
     }
 }
 

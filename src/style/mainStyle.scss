@@ -5,7 +5,10 @@ input{
     padding: 10px 15px;
     background-color: $quillGray;
 }
-
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
 button{
     color: #1fad95;
     padding: 15px 30px;

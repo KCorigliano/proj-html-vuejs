@@ -47,29 +47,22 @@ export default {
 .container-fluid{
     width: 100%;
 
-        .background{
-            width: 100%;
-            position: absolute;
-            z-index: -1;
+    .background{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
 
-            .background-height{
-                height: 2100px;
-                background-color: $quillGray;
-            }
-
-            .svg-img{
-                width: 100%;
-                margin: 0 auto;
-                background-color: $quillGray;
-            }
+        .background-height{
+            height: 2100px;
+            background-color: $quillGray;
         }
-    .container{
-        width: 1200px;
-        margin: 0 auto;
-        padding: 150px 0;
-        position: relative;
 
-        
+        .svg-img{
+            width: 100%;
+            margin: 0 auto;
+            background-color: $quillGray;
+        }
     }
+
 }
 </style>

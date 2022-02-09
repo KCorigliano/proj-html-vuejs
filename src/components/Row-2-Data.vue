@@ -1,4 +1,5 @@
 <template>
+<div class="container">
     <div class="row">
         <div>
             <h1>129+</h1>
@@ -14,6 +15,7 @@
         </div>
         <div class="bg-absolute"></div>
     </div>
+</div>
 </template>
 
 <script>
@@ -24,6 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
+@import '@/style/mainStyle.scss';
 .row{
     text-align: center;
     display: flex;
@@ -42,8 +45,8 @@ export default {
         bottom: -150px;
         right: 400px;
         border: 5px solid $drifwood;
-        border-bottom-color: white;
-        border-left-color: white;
+        border-bottom-color: $quillGray;
+        border-left-color: $quillGray;
         border-radius: 50%;
         transform: rotate(-45deg);
     }
