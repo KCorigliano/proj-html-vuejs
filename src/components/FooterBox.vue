@@ -8,10 +8,10 @@
                 <p>+1 (305) 547-9909 (9am -5 am EST, Monday - Fryday)</p>
                 <p>support@maxcoach.com</p>
                 <div class="social-row">
-                    <p><font-awesome-icon class="icon" :icon="['fab', 'facebook-square']" @click="searchInputShow" /></p>
-                    <p><font-awesome-icon class="icon" :icon="['fab', 'twitter']" @click="searchInputShow" /></p>
-                    <p><font-awesome-icon class="icon" :icon="['fab', 'instagram']" @click="searchInputShow" /></p>
-                    <p><font-awesome-icon class="icon" :icon="['fab', 'linkedin']" @click="searchInputShow" /></p>
+                    <p><font-awesome-icon class="icon" :icon="['fab', 'facebook-square']" /></p>
+                    <p><font-awesome-icon class="icon" :icon="['fab', 'twitter']" /></p>
+                    <p><font-awesome-icon class="icon" :icon="['fab', 'instagram']" /></p>
+                    <p><font-awesome-icon class="icon" :icon="['fab', 'linkedin']"/></p>
                 </div>
             </div>
             <div>

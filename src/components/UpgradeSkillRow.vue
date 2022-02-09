@@ -44,6 +44,10 @@ export default {
 
     .text{
         width: 35%;
+
+        h2{
+            font-size: 50px;
+        }
     }
 }
 </style>

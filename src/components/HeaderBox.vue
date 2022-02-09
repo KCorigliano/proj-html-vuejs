@@ -3,13 +3,13 @@
         <div class="links">
             <span v-for="(link, i) in headerLinks" :key="i">
                 {{link}}
-                <font-awesome-icon class="arrow" icon="chevron-down" @click="searchInputShow" />
+                <font-awesome-icon class="arrow" icon="chevron-down" />
             </span>
         </div>
         <img src="../assets/images/dark-logo.png" alt="">
         <div class="inputs">
-            <font-awesome-icon class="icon" icon="shopping-cart" @click="searchInputShow" />
-            <font-awesome-icon class="icon" icon="user-circle" @click="searchInputShow" />
+            <font-awesome-icon class="icon" icon="shopping-cart" />
+            <font-awesome-icon class="icon" icon="user-circle" />
             <input type="text" placeholder="Search...">
         </div>
     </div>

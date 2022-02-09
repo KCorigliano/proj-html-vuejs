@@ -1,25 +1,12 @@
 <template>
     <div class="container">
         <learn-about-row />
-        <div class="curiosity-row">
-            <div>
-                <h1>129+</h1>
-                <p>Enrolled learners</p>
-            </div>
-            <div>
-                <h1>80</h1>
-                <p>Finished sessions</p>
-            </div>
-            <div>
-                <h1>4%</h1>
-                <p>Satisfaction rate</p>
-            </div>
-        </div>
+        <some-data-row />
         <upgrade-skill-row />
         <latest-courses-row />
         <why-people-row />
         <transform-you-row />
-        <latest-courses-row />
+        <latest-from-blog-row />
         <subscribe-row />
     </div>
 </template>
@@ -31,6 +18,9 @@ import LatestCoursesRow from './LatestCoursesRow.vue'
 import WhyPeopleRow from './WhyPeopleRow.vue'
 import TransformYouRow from './TransformYouRow.vue'
 import SubscribeRow from './SubscribeRow.vue'
+import SomeDataRow from './SomeDataRow.vue'
+import LatestFromBlogRow from './LatestFromBlogRow.vue'
+
 
 export default {
     components:{
@@ -39,7 +29,9 @@ export default {
         LatestCoursesRow,
         WhyPeopleRow,
         TransformYouRow,
-        SubscribeRow
+        SubscribeRow,
+        SomeDataRow,
+        LatestFromBlogRow
     },
 }
 </script>
@@ -52,11 +44,5 @@ export default {
     margin: 0 auto;
     padding: 150px 0;
     
-    .curiosity-row{
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 150px;
-    }
 }
 </style>
