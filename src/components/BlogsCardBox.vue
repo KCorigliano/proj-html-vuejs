@@ -72,12 +72,6 @@ export default {
                 margin-right: 5px;
             }
         }
-
-        &:hover{
-            box-shadow: 0 0 10px $delta;
-            cursor: pointer;
-            transition: all 0.5s;
-        }
     }
 }
 
