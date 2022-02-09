@@ -1,8 +1,9 @@
+@import '@/style/variables.scss';
 input{
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
-    background-color: #e2e2e0;
+    background-color: $quillGray;
 }
 
 button{
@@ -15,7 +16,7 @@ button{
 
     &:hover{
         color: white;
-        background-color: #1fad95;
+        background-color: $montainMeadow;
         cursor: pointer;
         transition: all 0.2s;
     }
