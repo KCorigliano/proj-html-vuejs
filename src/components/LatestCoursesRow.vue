@@ -1,37 +1,38 @@
 <template>
 <div class="container">
-    <h1>Latest Online Courses</h1>
+    <h5>JOIN MAXCOACH AT BEST</h5>
+    <h1>Latest Online <span>Courses</span></h1>
     <div class="row">
         <div class="courses-container">
             <img src="../assets/images/course-02-480x298.jpg" alt="">
             <div class="courses-text">
-                <h2>$40.00</h2>
+                <h2>$40.<span>00</span></h2>
                 <p>Learning to Write as a Professional Author</p>
                 <div>
-                    <span>20 Lessons</span>
-                    <span>50 Students</span>
+                    <span><font-awesome-icon class="icon" icon="file-alt" />20 Lessons</span>
+                    <span><font-awesome-icon class="icon" icon="user" />50 Students</span>
                 </div>
             </div>
         </div>
         <div class="courses-container">
             <img src="../assets/images/stock-full-hd-03-480x298.jpg" alt="">
             <div class="courses-text">
-                <h2>$0.00</h2>
+                <h2>$0.<span>00</span></h2>
                 <p>Curstomer-centric info-Tech Strategies</p>
                 <div>
-                    <span>24 Lessons</span>
-                    <span>769 Students</span>
+                    <span><font-awesome-icon class="icon" icon="file-alt" />24 Lessons</span>
+                    <span><font-awesome-icon class="icon" icon="user" />769 Students</span>
                 </div>
             </div>
         </div>
         <div class="courses-container">
             <img src="../assets/images/stock-full-hd-04-480x298.jpg" alt="">
             <div class="courses-text">
-                <h2>$19.00</h2>
+                <h2>$19.<span>00</span></h2>
                 <p>Open Programming Courses fro Everyone: Python</p>
                 <div>
-                    <span>17 Lessons</span>
-                    <span>62 Students</span>
+                    <span><font-awesome-icon class="icon" icon="file-alt" />17 Lessons</span>
+                    <span><font-awesome-icon class="icon" icon="user" />62 Students</span>
                 </div>
             </div>
         </div>
@@ -44,22 +45,41 @@
         <div class="radio"></div>
     </div>
     <div class="paragraph">
-        <p>Control your personal preference settings to get notified about appropriate courses. <b>View all courses.</b></p>
+        <p>Control your personal preference settings to get notified about appropriate courses. <span>View all courses →</span></p>
     </div>
 </div>
 </template>
 
 <script>
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faFileAlt, faUser } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+library.add(faUser);
+library.add(faFileAlt);
+
+
 export default {
-    
+    components:{
+        FontAwesomeIcon,
+    }
 }
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/variables.scss';
 .container{
+
+    h5{
+        text-align: center;
+        color: $stormDust;
+        margin-bottom: 15px;
+    }
 
     h1{
         text-align: center;
+        span{
+        color: $montainMeadow;
+        }
     }
     
     .row{
@@ -81,6 +101,15 @@ export default {
                 border-radius: 0 0 5px 5px;
                 margin-top: -5px;
 
+                h2{
+                    color: $montainMeadow;
+
+                    span{
+                        font-size: 16px;
+                        color: $montainMeadow;
+                    }
+                }
+
                 &:hover{
                     box-shadow: 0 0 10px grey;
                     cursor: pointer;
@@ -96,6 +125,10 @@ export default {
                 span{
                     margin-right: 30px;
                     color: grey;
+
+                    .icon{
+                        margin-right: 5px;
+                    }
                 }
             }
         }
@@ -124,6 +157,11 @@ export default {
         text-align: center;
         width: 500px;
         margin: 0 auto;
+        span{
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
+        }
     }
 }
 </style>

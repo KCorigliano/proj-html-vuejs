@@ -36,7 +36,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 75px;
     position: relative;
 
     .img-box{
