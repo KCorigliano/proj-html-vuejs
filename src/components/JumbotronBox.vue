@@ -4,7 +4,7 @@
         <div class="text">
             <h2>Commence Business</h2>
             <h1>Distant Mentoring Program</h1>
-            <button>Download free guidebook</button>
+            <button>Download free guidebook →</button>
         </div>
     </div>
 </template>
@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/variables.scss';
 .container{
     position: relative;
     width: 100%;
@@ -38,7 +39,7 @@ export default {
         }
 
         button{
-            color: #1fad95;
+            color: $montainMeadow;
             padding: 15px 30px;
             border-radius: 5px;
             border: none;
@@ -47,7 +48,7 @@ export default {
 
             &:hover{
                 color: white;
-                background-color: #1fad95;
+                background-color: $montainMeadow;
                 cursor: pointer;
                 transition: all 0.2s;
             }
