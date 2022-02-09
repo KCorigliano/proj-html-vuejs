@@ -100,6 +100,7 @@ export default {
                 padding: 30px;
                 border-radius: 0 0 5px 5px;
                 margin-top: -5px;
+                background-color: white;
 
                 h2{
                     color: $montainMeadow;

@@ -1,4 +1,9 @@
 <template>
+<div class="container-fluid">
+    <div class="background">
+        <div class="background-height"></div>
+        <svg class="svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" height="100" fill="white"><path class="elementor-shape-fill" d="M0 0v100h100V0Q50 200 0 0"/></svg>
+    </div>
     <div class="container">
         <learn-about-row />
         <some-data-row />
@@ -9,6 +14,7 @@
         <latest-from-blog-row />
         <subscribe-row />
     </div>
+</div>
 </template>
 
 <script>
@@ -37,12 +43,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/variables.scss';
+.container-fluid{
+    width: 100%;
 
+        .background{
+            width: 100%;
+            position: absolute;
+            z-index: -1;
 
-.container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 150px 0;
-    
+            .background-height{
+                height: 2100px;
+                background-color: $quillGray;
+            }
+
+            .svg-img{
+                width: 100%;
+                margin: 0 auto;
+                background-color: $quillGray;
+            }
+        }
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+        padding: 150px 0;
+        position: relative;
+
+        
+    }
 }
 </style>
