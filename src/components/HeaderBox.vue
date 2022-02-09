@@ -6,7 +6,7 @@
                 <font-awesome-icon class="arrow" icon="chevron-down" />
             </span>
         </div>
-        <img src="../assets/images/dark-logo.png" alt="">
+        <img :src="headerLogo" alt="">
         <div class="inputs">
             <font-awesome-icon class="icon" icon="shopping-cart" />
             <font-awesome-icon class="icon" icon="user-circle" />
@@ -31,6 +31,7 @@ export default {
     },
     props:{
         headerLinks: Array,
+        headerLogo: String
     }
 }
 </script>

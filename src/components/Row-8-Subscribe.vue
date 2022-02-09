@@ -11,8 +11,8 @@
             <button>Subscribe</button>
         </div>
         <div class="bg-absolute-1"></div>
-        <img class="bg-absolute-2" src="../assets/images/maxcoach-shape-02.png" alt="">
-        <img class="bg-absolute-3" src="../assets/images/maxcoach-shape-09.png" alt="">
+        <img class="bg-absolute-2" src="../../public/images/maxcoach-shape-02.png" alt="">
+        <img class="bg-absolute-3" src="../../public/images/maxcoach-shape-09.png" alt="">
     </div>
 </div>
 </template>

@@ -18,7 +18,7 @@
                     I am happy with their arrangement of lesson and subjects. They
                 </p>
                 <div class="avatar-row">
-                    <img class="avatar" src="../assets/images/testimonial-avata-02.jpg" alt="">
+                    <img class="avatar" src="../../public/images/testimonial-avata-02.jpg" alt="">
                     <div>
                         <h5>MINA HOLLAGE</h5>
                         <span>/Freelancer</span>
@@ -32,7 +32,7 @@
                     choice. Their tutors are smart and professional when dealing with students
                 </p>
                 <div class="avatar-row">
-                    <img class="avatar" src="../assets/images/testimonial-avata-01.jpg" alt="">
+                    <img class="avatar" src="../../public/images/testimonial-avata-01.jpg" alt="">
                     <div>
                         <h5>MADLEY PONDOR</h5>
                         <span>/IT Specialist</span>

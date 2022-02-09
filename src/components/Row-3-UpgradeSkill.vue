@@ -4,11 +4,11 @@
         <div class="img-box">
             <div class="bg-absolute-1"></div>
             <div class="bg-absolute-2">
-                <img src="../assets/images/svg-0.svg" alt="">
+                <img src="../../public/images/svg-0.svg" alt="">
             </div>
             <div class="bg-absolute-3"></div>
-            <img src="../assets/images/stock-full-hd-11-670x450.jpg" alt="">
-            <img class="youtube-logo" src="../assets/images/icon-youtube-play.png" alt="">
+            <img src="../../public/images/stock-full-hd-11-670x450.jpg" alt="">
+            <img class="youtube-logo" src="../../public/images/icon-youtube-play.png" alt="">
         </div>
         <div class="text">
             <h4>HOW WE WORK</h4>
@@ -53,7 +53,7 @@ export default {
             bottom: -61px;
             right: 25px;
             z-index: -1;
-            background: url('../assets/images/maxcoach-shape-07.png');
+            background: url('../../public/images/maxcoach-shape-07.png');
         }
 
         .bg-absolute-2{
@@ -74,7 +74,7 @@ export default {
             top: 55px;
             left: -95px;
             z-index: -1;
-            background: url('../assets/images/maxcoach-shape-05.png') no-repeat;
+            background: url('../../public/images/maxcoach-shape-05.png') no-repeat;
         }
     }
 

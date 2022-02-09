@@ -8,10 +8,14 @@
         <learn-about-row />
         <some-data-row />
         <upgrade-skill-row />
-        <latest-courses-row />
+        <latest-courses-row 
+            :cards="coursesCards"
+        />
         <why-people-row />
         <transform-you-row />
-        <latest-from-blog-row />
+        <latest-from-blog-row 
+            :cards="blogsCards"
+        />
         <subscribe-row />
     </div>
 </div>
@@ -39,6 +43,10 @@ export default {
         SomeDataRow,
         LatestFromBlogRow
     },
+    props:{
+        coursesCards: Array,
+        blogsCards: Array,
+    }
 }
 </script>
 

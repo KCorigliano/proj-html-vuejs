@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <img src="../assets/images/home-3-hero-bg.jpg" alt="">
+    <div class="container-fluid">
+        <img src="../../public/images/home-3-hero-bg.jpg" alt="">
         <div class="text">
             <h2>Commence Business</h2>
             <h1>Distant Mentoring Program</h1>
@@ -17,9 +17,13 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/style/variables.scss';
-.container{
+.container-fluid{
     position: relative;
     width: 100%;
+    margin: 0 auto;
+    img{
+        width: 100%;
+    }
     .text{
         position: absolute;
         color: white;
