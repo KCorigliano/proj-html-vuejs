@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import UpgradeSkillRow from './UpgradeSkillRow.vue'
-import LearnAboutRow from './LearnAboutRow.vue'
-import LatestCoursesRow from './LatestCoursesRow.vue'
-import WhyPeopleRow from './WhyPeopleRow.vue'
-import TransformYouRow from './TransformYouRow.vue'
-import SubscribeRow from './SubscribeRow.vue'
-import SomeDataRow from './SomeDataRow.vue'
-import LatestFromBlogRow from './LatestFromBlogRow.vue'
+import LearnAboutRow from './Row-1-LearnAbout.vue'
+import SomeDataRow from './Row-2-Data.vue'
+import UpgradeSkillRow from './Row-3-UpgradeSkill.vue'
+import LatestCoursesRow from './Row-4-LatestCourses.vue'
+import WhyPeopleRow from './Row-5-WhyPeople.vue'
+import TransformYouRow from './Row-6-TransformYou.vue'
+import LatestFromBlogRow from './Row-7-LatestBlog.vue'
+import SubscribeRow from './Row-8-Subscribe.vue'
 
 
 export default {

@@ -1,13 +1,14 @@
 <template>
     <div class="row">
         <div class="text">
-            <h2>Why Do People *Hearts* Us?</h2>
+            <h4>TESTIMONIALS</h4>
+            <h2>Why Do People <span>*Hearts*</span> Us?</h2>
             <p>
                 Seeking for verbals of our service quality? Find them here.
                 Everything is transparent and straightforward for your sense
                 of justification
             </p>
-            <p>View all</p>
+            <p>View all →</p>
         </div>
         <div class="img-box">
             <div class="text-image background">
@@ -48,6 +49,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/style/variables.scss';
 .row{
     display: flex;
     justify-content: space-between;
@@ -57,8 +59,31 @@ export default {
     .text{
         width: 35%;
 
+        h4{
+            color: $stormDust;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
         h2{
             font-size: 50px;
+            span{
+                color:$montainMeadow;
+                font-weight: 200;
+            }
+        }
+
+        p{
+            color: $stormDust;
+            line-height: 25px;
+            margin-top: 15px;
+        }
+
+        p:last-child{
+            margin-top: 30px;
+            color: black;
+            font-weight: bold;
+            text-decoration: underline;
         }
     }
 
@@ -76,7 +101,7 @@ export default {
         }
 
         .text-image{
-            box-shadow: 0 0 50px grey;
+            box-shadow: 0 0 50px $delta;
             border-radius: 5px;
             padding: 25px;
         }
@@ -94,7 +119,7 @@ export default {
 
             span{
                 font-size: 12px;
-                color: grey;
+                color: $delta;
             }
         }
 
