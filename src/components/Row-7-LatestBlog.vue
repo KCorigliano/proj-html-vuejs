@@ -33,36 +33,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/style/variables.scss';
-@import '@/style/mainStyle.scss';
-.container-fluid{
-    width: 100%;
-    background-color: $quillGray;
-
-    .container{
-        padding: 50px 0;
-        h5{
-            text-align: center;
-            color: $delta;
-            margin-bottom: 25px;
-            font-weight: 400;
-        }
-    
-        h1{
-            text-align: center;
-            span{
-                color: $montainMeadow;
-                font-weight: 200;
-            }
-        }
-        
-        .row{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        
-            
-        }
-    }
-}
+@import '@/style/row-7-LatestBlog.scss';
 </style>

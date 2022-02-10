@@ -1,0 +1,31 @@
+@import '@/style/variables.scss';
+@import '@/style/mainStyle.scss';
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+
+    .links{
+        span{
+            margin-right: 30px; 
+            cursor: pointer;
+        }
+        .arrow{
+            font-size: 12px;
+        }
+    }
+
+    img{
+        height: 25px;
+    }
+
+    .inputs{
+        
+        .icon{
+            margin-right: 25px;
+            cursor: pointer;
+        }
+    }
+}

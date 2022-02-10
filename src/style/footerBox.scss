@@ -1,0 +1,58 @@
+@import '@/style/variables.scss';
+
+.container-fluid{
+    width: 100%;
+    background-color: $vulcan;
+    color: white;
+    padding: 50px 0;
+
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+
+        p{
+            color: $stormDust;
+            margin: 15px 0 0 0;
+        }
+    
+        .row{
+            display: flex;
+            justify-content: space-between;
+
+            .contacts{
+
+                .social-row{
+                    display: flex;
+                    color: $stormDust;
+                    justify-content: space-between;
+                    width: 150px;
+                    margin-top: 30px;
+                    font-size: 20px;
+                }
+            }
+    
+            .middle-links{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 100px;
+                p{
+                    margin: 15px 50px 0 0;
+                    cursor: pointer;
+                }
+            }
+
+            .right-links{
+                
+                p{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .rights-explication{
+            text-align: center;
+            margin-top: 100px;
+        }
+    }
+}

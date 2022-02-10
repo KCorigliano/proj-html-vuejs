@@ -1,0 +1,100 @@
+@import '@/style/variables.scss';
+@import '@/style/mainStyle.scss';
+
+.container{
+    padding-top: 150px;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+    
+        
+        .text{
+            width: 35%;
+    
+            h4{
+                font-weight: 400;
+                margin-bottom: 15px;
+    
+                span{
+                    font-weight: bold;
+                }
+            }
+    
+            h2{
+                font-size: 50px;
+                span{
+                    color: $montainMeadow;
+                    font-weight: 200;
+                }
+            }
+    
+            p{
+                line-height: 30px;
+            }
+    
+            p:last-child{
+                margin-top: 30px;
+                span{
+                    color: $montainMeadow;
+                    padding-bottom: 5px;
+                    text-decoration: underline;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+    
+        .img-box{
+            width: 50%;
+            position: relative;
+    
+            img{
+                border-radius: 5px;
+            }
+    
+            .img-absolute{
+                position: absolute;
+                top: -100px;
+                right: -40px;
+            }
+    
+            .bg-absolute-1{
+                position: absolute;
+                height: 50px;
+                width: 150px;
+                top: -80px;
+                right: 55px;
+                background: url('../../public/images/maxcoach-shape-07.png');
+                background-size: cover;
+            }
+    
+            .bg-absolute-2{
+                position: absolute;
+                height: 30px;
+                width: 130px;
+                top: -30px;
+                right: 65px;
+                background: url('../../public/images/maxcoach-shape-07.png');
+                background-size: cover;
+            }
+    
+            .bg-absolute-3{
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                top: -10px;
+                left: -100px;
+                border: 5px solid $drifwood;
+                border-radius: 50%;
+            }
+    
+            .bg-absolute-4{
+                position: absolute;
+                bottom: -90px;
+                right: 85px;
+            }
+        }
+    }
+}

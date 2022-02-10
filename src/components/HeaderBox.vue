@@ -37,38 +37,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 75px;
-
-    .links{
-        span{
-            margin-right: 30px; 
-            cursor: pointer;
-        }
-        .arrow{
-            font-size: 12px;
-        }
-    }
-
-    img{
-        height: 25px;
-    }
-
-    .inputs{
-        
-        .icon{
-            margin-right: 25px;
-        }
-
-        input{
-            border: none;
-            border-radius: 5px;
-            padding: 10px 15px;
-            background-color: #e2e2e0;
-        }
-    }
-}
+@import '@/style/headerBox.scss';
 </style>

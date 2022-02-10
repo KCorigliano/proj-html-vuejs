@@ -1,0 +1,40 @@
+@import '@/style/variables.scss';
+@import '@/style/mainStyle.scss';
+
+.courses-container{
+    padding: 30px;
+    width: calc(100% / 3);
+
+    img{
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .courses-text{
+        padding: 30px 0;
+        border-radius: 0 0 5px 5px;
+        margin-top: -5px;
+
+        h5{
+            text-align: left;
+            margin-bottom: 5px;
+            color: $stormDust;
+        }
+
+        p{
+            margin: 15px 0 30px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        span{
+            margin-right: 30px;
+            color: $delta;
+            transition: all 0.5s;
+            .icon{
+                margin-right: 5px;
+            }
+        }
+    }
+}
