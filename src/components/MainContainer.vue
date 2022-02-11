@@ -4,20 +4,18 @@
         <div class="background-height"></div>
         <svg class="svg-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" height="100" fill="white"><path class="elementor-shape-fill" d="M0 0v100h100V0Q50 200 0 0"/></svg>
     </div>
-    <div class="container">
-        <learn-about-row />
-        <some-data-row />
-        <upgrade-skill-row />
-        <latest-courses-row 
-            :cards="coursesCards"
-        />
-        <why-people-row />
-        <transform-you-row />
-        <latest-from-blog-row 
-            :cards="blogsCards"
-        />
-        <subscribe-row />
-    </div>
+    <learn-about-row />
+    <some-data-row />
+    <upgrade-skill-row />
+    <latest-courses-row 
+        :cards="coursesCards"
+    />
+    <why-people-row />
+    <transform-you-row />
+    <latest-from-blog-row 
+        :cards="blogsCards"
+    />
+    <subscribe-row />
 </div>
 </template>
 
